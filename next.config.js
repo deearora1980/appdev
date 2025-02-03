@@ -49,8 +49,17 @@ const securityHeaders = [
 
 const isStaticExport = process.env.EXPORT === 'true'
 const output = isStaticExport ? 'export' : undefined
-const basePath = process.env.BASE_PATH || undefined
-const unoptimized = isStaticExport ? true : undefined
+//const basePath = process.env.BASE_PATH || undefined
+const nextConfig = {
+  basePath: '/appdev', // Replace with your repository name
+  output: 'export', // Required for static export
+  images: {
+    unoptimized: true, // Disable image optimization for static export
+  },
+};
+
+module.exports = nextConfig;
+//const unoptimized = isStaticExport ? true : undefined
 
 /**
  * @type {import('next').NextConfig}
