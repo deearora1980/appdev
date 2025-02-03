@@ -60,7 +60,7 @@ const nextConfig = {
 
 module.exports = nextConfig;
 const unoptimized = isStaticExport ? true : undefined
-
+/*
 const { withImageExportOptimizer } = require('next-image-export-optimizer');
 
 module.exports = withImageExportOptimizer({
@@ -76,7 +76,7 @@ const imageLoader = ({ src, width, quality }) => {
 };
 
 module.exports = imageLoader;
-
+*/
 /**
  * @type {import('next').NextConfig}
  **/
