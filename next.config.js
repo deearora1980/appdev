@@ -49,7 +49,7 @@ const securityHeaders = [
 
 const isStaticExport = process.env.EXPORT === 'true'
 const output = isStaticExport ? 'export' : undefined
-//const basePath = process.env.BASE_PATH || undefined
+const basePath = process.env.BASE_PATH || undefined
 const nextConfig = {
   basePath: '/appdev', // Replace with your repository name
   output: 'export', // Required for static export
