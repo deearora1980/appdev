@@ -59,7 +59,7 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
-//const unoptimized = isStaticExport ? true : undefined
+const unoptimized = isStaticExport ? true : undefined
 
 /**
  * @type {import('next').NextConfig}
