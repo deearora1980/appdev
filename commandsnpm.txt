@@ -1,0 +1,21 @@
+  227  git remote add origin https://github.com/deearora1980/appdev.git
+  228  git add --all
+  229  git commit -m
+  230  git commit -m "This is Vipul Gaur"
+  231  git push -u origin main
+  232  npm run deploy
+  233  git remote -v
+  234  git config --global http.postBuffer 157286400
+  235  git pull && git push
+  236  git add --all
+  237  git commit -m
+  238  git commit -m "This is Vipul Gaur"
+  239  git push -u origin main
+  240  npm run deploy
+  241  rm -rf node_modules/.cache/gh-pages
+  242  npm run deploy
+  npm run build
+  npm start
+  npx serve out
+
+  
