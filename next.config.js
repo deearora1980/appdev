@@ -61,6 +61,22 @@ const nextConfig = {
 module.exports = nextConfig;
 const unoptimized = isStaticExport ? true : undefined
 
+const { withImageExportOptimizer } = require('next-image-export-optimizer');
+
+module.exports = withImageExportOptimizer({
+  images: {
+    loader: 'custom',
+    loaderFile: './custom-image-loader.js',
+  },
+  // other Next.js configurations
+});
+
+const imageLoader = ({ src, width, quality }) => {
+  return `/path/to/optimized/images/${src}?w=${width}&q=${quality || 75}`;
+};
+
+module.exports = imageLoader;
+
 /**
  * @type {import('next').NextConfig}
  **/
